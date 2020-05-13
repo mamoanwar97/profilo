@@ -65,6 +65,27 @@ there is also a reset button if you wanted to retry.
 when you win your no of moves and time taken is displayed. there is also a play again button to have more fun. ;)`,
               image: "../memory.png",
               link: "https://github.com/mamoanwar97/memory-game",
+            },
+            {
+              id: 5,
+              title: "Arcade Game",
+              text: `In this game you have a Player and Enemies (Bugs). The goal of the player is to reach the water, without colliding into any one of the enemies. The player can move left, right, up and down. The enemies move in varying speeds on the paved block portion of the scene. Once a the player collides with an enemy, the game is reset and the player moves back to the start square. Once the player reaches the water the game is won.`,
+              image: "../Arcade.png",
+              link: "https://github.com/mamoanwar97/Arcade-game",
+            },
+            {
+              id: 6,
+              title: "Sefrwahed website",
+              text: `This is Sefrwahed last updated website. I contributed in the main page in updating 3 Sections: Who are we, Events, and Contact us section, added the pop-up. I also built Code Geist page.`,
+              image: "../sefrwahed.png",
+              link: "https://github.com/mamoanwar97/Sefrwahed",
+            },
+            {
+              id: 7,
+              title: "Github",
+              text: `You can know more about my projects through my github`,
+              image: "../github1.svg",
+              link: "https://github.com/mamoanwar97/",
             }
           ]
         };

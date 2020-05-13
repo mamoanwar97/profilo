@@ -32,9 +32,9 @@ a.nav-link{
 .dark .detail{
   color: #fff;
   background-color: #383069;
-  -webkit-box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.75);
-  -moz-box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.75);
-  box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.75);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(203,173,244,0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(203,173,244,0.75);
+  box-shadow: 0px 0px 10px 0px rgba(203,173,244,0.75);
 }
 
 .feature-info{

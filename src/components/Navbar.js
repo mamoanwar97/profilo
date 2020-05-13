@@ -22,7 +22,7 @@ class Navigate extends Component {
     return (
       <Navbar className={this.props.dark? "navbar-dark": "navbar-light"} expand="md">
           <div className="container">
-              <NavbarBrand className="mr-auto">Mamoanwar</NavbarBrand>
+              <NavbarBrand className="mr-auto"><NavLink className="nav-link" to='/home'>Mamoanwar</NavLink></NavbarBrand>
               <NavbarToggler onClick={this.toggleNav}/>
               <Collapse isOpen={this.state.isNavOpen} navbar>
                 <Nav navbar className="ml-auto">

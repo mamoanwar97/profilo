@@ -16,5 +16,4 @@ const FeatureCard = (props) => (
       </div>
     );
 
-
 export default FeatureCard;
