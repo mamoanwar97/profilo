@@ -4,15 +4,20 @@
     color: #fff;
 }
 .dark{
-    background-color: #3e3575;
+    background-color: #1f1b3b;
 }
 
 .navbar-dark {
     background-color: #1f1b3b;
     color: White;
 }
-
-.feature{
+a.nav-link{
+  color: #000!important;
+}
+.dark a.nav-link{
+  color: #fff!important;
+}
+.detail{
   padding: 10px;
   margin: 30px auto;
   border-radius: 10px;
@@ -22,6 +27,9 @@
   box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
 .dark .feature{
+  color: #fff;
+}
+.dark .detail{
   color: #fff;
   background-color: #383069;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.75);
@@ -53,4 +61,51 @@
 }
 .dark .contact a.mail{
   color: #fff;
+}
+hr{
+    border-top: 1px solid rgba(0,0,0,.4);
+}
+.dark hr{
+  color: white;
+  border-top: 1px solid rgba(255,255,255,.2);
+}
+.github-link{
+  text-decoration: none;
+  border: 2px solid #000;
+  color: #000;
+}
+.github-link:hover, .github-link:focus{
+  background-color: #000;
+  color: #fff;
+}
+.dark .github-link{
+  text-decoration: none;
+  border: 2px solid #fff;
+  color: #fff;
+}
+.dark .github-link:hover, .dark .github-link:focus{
+  background-color: #fff;
+  color: #000;
+}
+
+.light-switch{
+  border-color: #000;
+  color: #000;
+}
+.light-switch:hover, .light-switch:focus{
+  background-color: #000;
+  color: #fff!important;
+}
+
+.dark .light-switch{
+  border-color: #fff;
+}
+.dark .light-switch:hover, .light-switch:focus{
+  background-color: #fff;
+  color: #000!important;
+}
+.detail-card-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Navbar, NavbarBrand, Nav, NavItem, NavbarToggler, Collapse, Button } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 class Navigate extends Component {
   constructor(props) {
@@ -29,15 +30,15 @@ class Navigate extends Component {
                       <NavLink className="nav-link" to='/home'>Home</NavLink>
                   </NavItem>
                 <NavItem>
-                    <a className="nav-link" href='#contact'>Contact</a>
+                  <Link activeClass="active" className="nav-link" to="contact" spy={true} smooth={true} duration={500} >Contact</Link>
                 </NavItem>
                 <NavItem>
-                    <NavLink className="nav-link" to='#projects'>Projects</NavLink>
+                    <Link to="project" className="nav-link" smooth={true} duration={500} >Projects</Link>
                 </NavItem>
                 </Nav>
                 <Nav navbar className="ml-auto">
                   <NavItem>
-                    <Button outline className="nav-link" onClick={this.props.darkToggle}>{this.props.dark? "Light-mode": "Dark-mode"}</Button>
+                    <Button outline className="nav-link light-switch" onClick={this.props.darkToggle}>{this.props.dark? "Light-mode": "Dark-mode"}</Button>
                   </NavItem>
                 </Nav>
               </Collapse>

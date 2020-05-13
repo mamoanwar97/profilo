@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import Navbar from "./Navbar";
+import { Switch, Route, Redirect } from 'react-router-dom'
 import Home from "./Home"
+import DetailCard from "./DetailCard"
+import Contact from "./Contact"
 
 class Main extends Component {
   constructor(props) {
@@ -60,7 +63,7 @@ class Main extends Component {
 there is also a starts rating which depends on your no. of moves so be careful everymove counts :D
 there is also a reset button if you wanted to retry.
 when you win your no of moves and time taken is displayed. there is also a play again button to have more fun. ;)`,
-              image: "memory.png",
+              image: "../memory.png",
               link: "https://github.com/mamoanwar97/memory-game",
             }
           ]
@@ -74,11 +77,23 @@ when you win your no of moves and time taken is displayed. there is also a play 
       });
     }
 
+
   render() {
+    const CardWithId = ({match}) => {
+      const project=this.state.data.filter((d) => d.id === parseInt(match.params.Id.substr(1),10))[0];
+      return(
+        <DetailCard title={project.title} image={project.image} text={project.text} link={project.link}/>
+      );
+    };
     return (
       <div  className={this.state.dark? "dark": ""}>
         <Navbar darkToggle={this.toggleDark} dark={this.state.dark}/>
-        <Home data={this.state.data} />
+        <Switch>
+          <Route path='/home' component={() => <Home data={this.state.data} />} />
+          <Route path='/projects/:Id' component={CardWithId} />
+          <Redirect to="/home" />
+        </Switch>
+        <Contact />
       </div>
     );
   }
