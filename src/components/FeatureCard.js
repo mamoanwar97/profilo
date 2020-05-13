@@ -6,7 +6,7 @@ const FeatureCard = (props) => (
         <hr />
          <div className="row">
            <div  className="col-sm-6">
-             <img className="col-sm-12 mb-3 m-md-3" src={props.image != ""? props.image:"work.svg"} alt="Project image" />
+             <img className="col-sm-12 mb-3 m-md-3" src={props.image !== ""? props.image:"work.svg"} alt="project-img" />
            </div>
            <div className="col-sm-6 feature-info">
                <h3>{props.title}</h3>

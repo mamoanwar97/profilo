@@ -1,11 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
 
 const DetailCard = (props) => (
       <div className="container">
          <div className="row detail p-4">
            <div  className="col-sm-10 m-auto">
-             <img className="col-sm-12 mb-3" src={props.image != ""? `../${props.image}`:"../work.svg"} alt="Project image" />
+             <img className="col-sm-12 mb-3" src={props.image !== ""? `../${props.image}`:"../work.svg"} alt="Project-img" />
            </div>
            <div className="col-sm-10 detail-info m-auto">
             <h1>{props.title}</h1>

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Navbar, NavbarBrand, Nav, NavItem, NavbarToggler, Collapse, Button } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link } from 'react-scroll'
 
 class Navigate extends Component {
   constructor(props) {
