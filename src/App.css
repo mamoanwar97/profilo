@@ -1,17 +1,18 @@
-.jumbotron {
-    padding:70px 30px 70px 30px;
-    margin:0px auto;
-    background: #9575CD ;
-    color:floralwhite;
+.dark .jumbotron {
+    background: #322a5e;
+    border-radius: 0;
+    color: #fff;
+}
+.dark{
+    background-color: #3e3575;
 }
 
 .navbar-dark {
-    background-color: #512DA8;
+    background-color: #1f1b3b;
     color: White;
 }
 
-.media{
-  border: 1px solid #000;
+.feature{
   padding: 10px;
   margin: 30px auto;
   border-radius: 10px;
@@ -20,15 +21,36 @@
   -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
+.dark .feature{
+  color: #fff;
+  background-color: #383069;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.75);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.75);
+  box-shadow: 0px 0px 10px 0px rgba(255,255,255,0.75);
+}
 
-.view-link{
-  margin: 4px auto;
+.feature-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
-.ans_unans{
-  margin: 20px auto;
+
+.detail-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.tab-content{
-  border: 1px solid #dee2e6;
-  padding: 20px;
-  border-top: 0;
+.detail-info p{
+  word-wrap: break-word;
+}
+.dark .contact{
+  color: floralwhite;
+}
+.contact a.mail{
+  text-decoration: none;
+  color: #000;
+}
+.dark .contact a.mail{
+  color: #fff;
 }
