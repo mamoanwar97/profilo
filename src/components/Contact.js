@@ -14,8 +14,8 @@ const Contact = () => (
                        481, Sayed el barbry st.<br />
                        Hadeq el qoppa, Cairo<br />
                        Egypt<br />
-                       <i className="fa fa-phone"></i>: 0020 100 964 9613<br />
-                       <i className="fa fa-envelope"></i>: <a href="mailto:mamoanwar97@gmail.com" className="mail">mamoanwar97@gmail.com</a>
+                       <i className="fa fa-phone"></i> : 0020 100 964 9613<br />
+                       <i className="fa fa-envelope"></i> : <a href="mailto:mamoanwar97@gmail.com" className="mail">mamoanwar97@gmail.com</a>
                        </address>
                        <div className="btn-group" role="group">
                        <a role="button" className="btn btn-primary" href="https://www.linkedin.com/in/mamoanwar97/"><i className="fa fa-linkedin"></i></a>
